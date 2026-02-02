@@ -20,4 +20,11 @@ def main():
             name = extract_material_name(prim.GetName())
             if name in lookup:
                 props = lookup[name]
-                api = UH\HHR’ÒT€€€€€€€€€…Á¤€ôU    )•…Ñ••¹Í¥ÑåÑÑÈ¡ÁÉ½ÁÍl‰‘•¹Í¥Ñä‰t¤(€€€€€€€€€€€€€€€…Á¤¹É•…Ñ•MÑ…Ñ¥É¥Ñ¥½¹ÑÑÈ¡ÁÉ½ÁÍl‰ÍÑ…Ñ¥É¥Ñ¥½¸‰t¤(€€€€€€€€€€€€€€€…Á¤¹É•…Ñ•å¹…µ¥É¥Ñ¥½¹ÑÑÈ¡ÁÉ½ÁÍl‰‘å¹…µ¥É¥Ñ¥½¸["dynamicFrictionÈ™[˜[ZXÑœšXİ[Û…²&G–æÖ–4g&–7F–öál‰‘å·F—GWF–öâ%Ò¢&–çB†b$Æ–VB‡—6–72Fò¶æÖWÒ" ¦Ö–â‚ 
+                api = UsdPhysics.MaterialAPI.Apply(prim)
+                api.CreateDensityAttr(props["density"])
+                api.CreateStaticFrictionAttr(props["staticFriction"])
+                api.CreateDynamicFrictionAttr(props["dynamicFriction"])
+                api.CreateRestitutionAttr(props["restitution"])
+                print(f"Applied physics to {name}")
+
+main()
