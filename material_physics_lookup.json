@@ -1,0 +1,38 @@
+{
+    "SteelSatin": {
+        "density": 7850,
+        "staticFriction": 0.74,
+        "dynamicFriction": 0.57,
+        "restitution": 0.25
+    },
+    "Aluminum": {
+        "density": 2700,
+        "staticFriction": 0.47,
+        "dynamicFriction": 0.35,
+        "restitution": 0.3
+    },
+    "CarbonFiber": {
+        "density": 1550,
+        "staticFriction": 0.3,
+        "dynamicFriction": 0.25,
+        "restitution": 0.4
+    },
+    "ABS": {
+        "density": 1050,
+        "staticFriction": 0.5,
+        "dynamicFriction": 0.4,
+        "restitution": 0.2
+    },
+    "Titanium": {
+        "density": 4500,
+        "staticFriction": 0.36,
+        "dynamicFriction": 0.34,
+        "restitution": 0.27
+    },
+    "PTFE": {
+        "density": 2200,
+        "staticFriction": 0.04,
+        "dynamicFriction": 0.04,
+        "restitution": 0.1
+    }
+}
